@@ -177,7 +177,7 @@ body {
     max-height: none;
 }
 
-.hidden-below-700{
+li.navrbar-item.hidden-below-700{
     display: none;
 }
 
