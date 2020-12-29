@@ -208,7 +208,7 @@ body {
     }
 
     #navrar .navbar-link:first-child{
-        margin-right: 1.3em;
+        margin-right: 1.3em !important;
     }
 
     #navbar .navbar-link:last-child {
