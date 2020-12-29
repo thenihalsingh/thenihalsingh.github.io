@@ -207,11 +207,11 @@ body {
         height: 100%;
     }
 
-    #navrar .navbar-link:first-child{
+    #navbar .navbar-link:first-child{
         margin-right: 1.3em !important;
     }
 
-    /* #navbar .navbar-link:last-child {
+    #navbar .navbar-link:last-child {
         margin-right: 0;
-    } */
+    }
 }
