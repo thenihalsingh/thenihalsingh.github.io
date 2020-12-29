@@ -1,5 +1,3 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap'); */
-
 :root {
     --navbar-bg-color: #1b1c1e;
     --navbar-text-color: hsl(0, 0%, 85%);
@@ -179,10 +177,18 @@ body {
     max-height: none;
 }
 
+.hidden-below-700{
+    display: none;
+}
+
 /*Responsive Navbar: Desktop Layout*/
 @media screen and (min-width: 700px) {
     .navbar-toggle {
         display: none;
+    }
+
+    .hidden-below-700{
+        display:flex
     }
 
     #navbar .navbar-menu,
@@ -207,11 +213,16 @@ body {
         height: 100%;
     }
 
-    #navbar .navbar-link:first-child{
+    li.navrbar-item{
+        padding: 1.5em;
+    }
+
+    /* #navbar .navbar-link:first-child{
         margin-right: 1.3em !important;
     }
 
     #navbar .navbar-link:last-child {
-        margin-right: 0;
-    }
+        margin-right: 0 !important;
+        padding-right: 0 !important;
+    } */
 }

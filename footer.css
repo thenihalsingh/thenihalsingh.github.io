@@ -1,0 +1,83 @@
+:root {
+    --footer-bg-color: #1b1c1e;
+    --footer-text-color: hsl(0, 0%, 85%);
+    --footer-text-color-focus: white;
+    --footer-bg-contrast: #1b1c1e;
+}
+
+#footer {
+    --footer-height: 4.3em;
+    position: fixed;
+    height: var(--footer-height);
+    background-color: var(--footer-bg-color);
+    bottom: 0;
+    box-shadow: 0 2px 4px #2b2b2b;
+    width: 100vw;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    height: 100%;
+    align-items: center;
+}
+
+.footer-item {
+    margin: 0.em;
+    width: 100%;
+}
+
+.footer-link {
+    color: var(--footer-text-color);
+    transition: color 0.2s ease-in-out;
+    text-decoration: none;
+    display: flex;
+    font-weight: 400;
+    align-items: center;
+    transition: background-color 0.2s ease-in-out,
+                color 0.2s ease-in-out;
+}
+
+.footer-link {
+    justify-content: center;
+    width: 100%;
+    padding: 0.2em 0.1em;
+    border-radius: 5px;
+}
+
+.footer-link:focus,
+.footer-link:hover {
+    color: var(--footer-text-color-focus);
+    background-color: var(--footer-bg-contrast);
+}
+
+
+.footer-menu {
+    margin-top: 5px;
+    margin-bottom: auto;
+}
+
+.footer-links {
+    list-style-type: none;
+    max-height: 0;
+    overflow: hidden;
+    position: absolute;
+    background-color: var(--footer-bg-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-links {
+    padding: 1em;
+    max-height: none;
+    width: 100vw;
+}
+
+/*Responsive footer: Desktop Layout*/
+@media screen and (min-width: 700px) {
+    footer{
+        display: none;
+    }
+}
