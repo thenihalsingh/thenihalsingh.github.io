@@ -211,7 +211,7 @@ body {
         margin-right: 1.3em !important;
     }
 
-    #navbar .navbar-link:last-child {
+    /* #navbar .navbar-link:last-child {
         margin-right: 0;
-    }
+    } */
 }
