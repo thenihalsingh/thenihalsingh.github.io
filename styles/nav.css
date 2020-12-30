@@ -17,7 +17,7 @@ body {
     line-height: 1.6;
 }
 
-.container {
+.custom-container {
     max-width: 100vw;
     padding-left: 1.4rem;
     padding-right: 1.4rem;
@@ -25,7 +25,7 @@ body {
     margin-right: auto;
 }
 
-#navbar {
+#custom-navbar {
     --navbar-height: 3.3em;
     position: fixed;
     height: var(--navbar-height);
@@ -35,7 +35,7 @@ body {
     box-shadow: 0 2px 4px #2b2b2b;
 }
 
-.navbar-container {
+.custom-navbar-container {
     display: flex;
     flex-direction: row;
     justify-content:space-between;
@@ -43,13 +43,13 @@ body {
     align-items: center;
 }
 
-.navbar-item {
+.custom-navbar-item {
     margin: 0.em;
     width: 100%;
 }
 
-.home-link,
-.navbar-link {
+.custom-home-link,
+.custom-navbar-link {
     color: var(--navbar-text-color);
     transition: color 0.2s ease-in-out;
     text-decoration: none;
@@ -60,29 +60,29 @@ body {
                 color 0.2s ease-in-out;
 }
 
-.home-link{
+.custom-home-link{
     font-size: 1.6em !important;
 }
 
-.home-link:focus,
-.home-link:hover {
+.custom-home-link:focus,
+.custom-home-link:hover {
     color: var(--navbar-text-color-focus);
 }
 
-.navbar-link {
+.custom-navbar-link {
     justify-content: center;
     width: 100%;
     padding: 0.2em 0.1em;
     border-radius: 5px;
 }
 
-.navbar-link:focus,
-.navbar-link:hover {
+.custom-navbar-link:focus,
+.custom-navbar-link:hover {
     color: var(--navbar-text-color-focus);
     background-color: var(--navbar-bg-contrast);
 }
 
-.navbar-logo {
+.custom-navbar-logo {
     background-color: var(--navbar-text-color-focus);
     border-radius: 50%;
     width: 28px;
@@ -90,7 +90,7 @@ body {
     margin-right: 0.2em;
 }
 
-.navbar-toggle {
+.custom-navbar-toggle {
     cursor: pointer;
     border: none;
     outline: none;
@@ -103,7 +103,7 @@ body {
     flex-direction: column;
 }
 
-.icon-bar {
+.custom-icon-bar {
     display: block;
     width: 25px;
     height: 4px;
@@ -114,31 +114,31 @@ body {
     background-color: var(--navbar-text-color);
 }
 
-.navbar-toggle:focus .icon-bar,
-.navbar-toggle:hover .icon-bar {
+.custom-navbar-toggle:focus .custom-icon-bar,
+.custom-navbar-toggle:hover .custom-icon-bar {
     background-color: var(--navbar-text-color-focus);
 }
 
-#navbar.opened .navbar-toggle .icon-bar:first-child,
-#navbar.opened .navbar-toggle .icon-bar:last-child {
+#custom-navbar.opened .custom-navbar-toggle .custom-icon-bar:first-child,
+#ncustom-avbar.opened .custom-navbar-toggle .custom-icon-bar:last-child {
     position: absolute;
     margin: 0;
     width: 30px;
 }
 
-#navbar.opened .navbar-toggle .icon-bar:first-child {
+#custom-navbar.opened .custom-navbar-toggle .custom-icon-bar:first-child {
     transform: rotate(45deg);
 }
 
-#navbar.opened .navbar-toggle .icon-bar:nth-child(2) {
+#custom-navbar.opened .custom-navbar-toggle .custom-icon-bar:nth-child(2) {
     opacity: 0;
 }
 
-#navbar.opened .navbar-toggle .icon-bar:last-child {
+#custom-navbar.opened .custom-navbar-toggle .custom-icon-bar:last-child {
     transform: rotate(-45deg);
 }
 
-.navbar-menu {
+.custom-navbar-menu {
     position: fixed;
     top: var(--navbar-height);
     bottom: 0;
@@ -150,13 +150,13 @@ body {
     right: 0;
 }
 
-#navbar.opened .navbar-menu {
+#custom-navbar.opened .custom-navbar-menu {
     background-color: rgba(0, 0, 0, 0.4);
     opacity: 1;
     visibility: visible;
 }
 
-.navbar-links {
+.custom-navbar-links {
     list-style-type: none;
     max-height: 0;
     overflow: hidden;
@@ -172,27 +172,27 @@ body {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
 }
 
-#navbar.opened .navbar-links {
+#custom-navbar.opened .custom-navbar-links {
     padding: 1em;
     max-height: none;
 }
 
-li.navrbar-item.hidden-below-700{
+li.custom-navrbar-item.custom-hidden-below-700{
     display: none;
 }
 
 /*Responsive Navbar: Desktop Layout*/
 @media screen and (min-width: 700px) {
-    .navbar-toggle {
+    .custom-navbar-toggle {
         display: none;
     }
 
-    li.navrbar-item.hidden-below-700{
+    li.custom-navrbar-item.custom-hidden-below-700{
         display:flex
     }
 
-    #navbar .navbar-menu,
-    #navbar.opened .navbar-menu {
+    #custom-navbar .custom-navbar-menu,
+    #custom-navbar.opened .custom-navbar-menu {
         visibility: visible;
         opacity: 1;
         position: static;
@@ -200,8 +200,8 @@ li.navrbar-item.hidden-below-700{
         height: 100%;
     }
 
-    #navbar .navbar-links,
-    #navbar.opened .navbar-links {
+    #custom-navbar .custom-navbar-links,
+    #custom-navbar.opened .custom-navbar-links {
         margin: 0;
         padding: 0;
         box-shadow: none;
@@ -213,7 +213,7 @@ li.navrbar-item.hidden-below-700{
         height: 100%;
     }
 
-    li.navrbar-item{
+    li.custom-navrbar-item{
         padding: 1.5em;
     }
 

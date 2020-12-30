@@ -1,5 +1,5 @@
-const navbar = document.getElementById("navbar");
-const navbarToggle = navbar.querySelector(".navbar-toggle");
+const navbar = document.getElementById("custom-navbar");
+const navbarToggle = navbar.querySelector(".custom-navbar-toggle");
 
 function openMobileNavbar() {
   navbar.classList.add("opened");
@@ -19,8 +19,8 @@ navbarToggle.addEventListener("click", () => {
   }
 });
 
-const navbarMenu = navbar.querySelector(".navbar-menu");
-const navbarLinksContainer = navbar.querySelector(".navbar-links");
+const navbarMenu = navbar.querySelector(".custom-navbar-menu");
+const navbarLinksContainer = navbar.querySelector(".custom-navbar-links");
 
 navbarLinksContainer.addEventListener("click", (clickEvent) => {
   clickEvent.stopPropagation();
