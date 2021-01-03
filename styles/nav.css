@@ -1,8 +1,8 @@
 :root {
-    --navbar-bg-color: #1b1c1e;
+    --navbar-bg-color: #2b2b2b;
     --navbar-text-color: hsl(0, 0%, 85%);
     --navbar-text-color-focus: white;
-    --navbar-bg-contrast: #1b1c1e;
+    --navbar-bg-contrast: #2b2b2b;
 }
 
 * {
@@ -27,7 +27,7 @@ body {
 
 #custom-navbar {
     --navbar-height: 3.3em;
-    position: fixed;
+    position: sticky;
     height: var(--navbar-height);
     background-color: var(--navbar-bg-color);
     left: 0;
